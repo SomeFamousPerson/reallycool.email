@@ -7,3 +7,12 @@
   color: white;
   text-align: left;
 }
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
