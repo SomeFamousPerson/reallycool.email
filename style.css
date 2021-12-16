@@ -8,6 +8,7 @@ main {
   flex: 1;
 }
 footer {
-background-color: black;
-color: white;
+  --background-color: #000000;
+  --text-color: #FFFFFF;
+  --link-colour: #FFA500;
 }
