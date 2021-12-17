@@ -12,3 +12,20 @@ footer {
   --text-color: #FFFFFF;
   --link-colour: #FFA500;
 }
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 50%;
+}
+
+main--top {
+  align-self: flex-start;
+}
+
+main--bottom {
+  align-self: flex-end;
+}
