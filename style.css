@@ -7,8 +7,6 @@ body {
 main {
   flex: 1;
 }
-footer {
-  --background-color: #000000;
-  --text-color: #FFFFFF;
-  --link-colour: #FFA500;
+html{
+	background-color: #f1f1f1;
 }
