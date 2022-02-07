@@ -1,12 +1,78 @@
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+
+/* -*- css-indent-offset: 2; -*- */
+:root {
+  --light:                    #FAFAFA;
+  --lighter:                  #CCC;
+  --darker:                   #111;
+  --dark:                     #222;
+  --dark-accent:              #444;
+  --dark-lighter:             #888;
+  --link:                     #07A;
+  --link-visited-light-theme: #941352;
+  --link-visited-dark-theme:  #9f4f76;
 }
 
-main {
-  flex: 1;
+html {
+  height: 100%;
+  padding : 0;
 }
-html{
-	background-color: #f1f1f1;
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  margin: 0 auto;
+  max-width: 672px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: var(--dark);
+  background-color: var(--light);
+  padding: 0 10px;
+  font-family: "Open Sans";
+}
+
+@media screen and (min-width: 680px) {
+  main {
+    margin: 40px 0;
+  }
+}
+
+h1, h2 {
+  line-height: 1.2;
+}
+
+footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  color: var(--dark-lighter);
+  font-size: 0.8em;
+}
+
+a {
+  color: var(--link);
+}
+a:visited {
+  color: var(--link-visited-light-theme);
+}
+footer > a {
+  color: var(--dark-lighter) !important;
+}
+
+
+/* Dark mode *****************************************************************/
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--light);
+    background: var(--dark);
+  }
+
+  footer{
+    color: var(--lighter);
+  }
+
+
+  a:visited {
+    color: var(--link-visited-dark-theme);
+  }
 }
